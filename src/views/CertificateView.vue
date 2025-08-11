@@ -1,0 +1,286 @@
+<script>
+export default {
+  data() {
+    return {
+      activeTab: 1,
+      items: [
+        {
+          id: 1,
+          name: 'Software Engineer Intern',
+          imageUrl: 'se',
+          status: '',
+          tech: 'HackerRank',
+          github: 'null',
+          demo: 'https://www.hackerrank.com/certificates/a08d4644a0b5'
+        },
+        {
+          id: 1,
+          name: 'SQL',
+          imageUrl: 'sql1',
+          status: '',
+          tech: 'HackerRank',
+          github: 'null',
+          demo: 'https://www.hackerrank.com/certificates/c7e7fb7e128b'
+        },
+        {
+          id: 1,
+          name: 'JavaScript Essentials',
+          imageUrl: 'javascript',
+          status: '',
+          tech: 'Cisco',
+          github: 'null',
+          demo: 'https://www.credly.com/badges/394ed00e-4af7-430b-bb21-b67df65798ec/'
+        },
+        {
+          id: 2,
+          name: 'Ethical Hacker',
+          imageUrl: 'hacker',
+          status: '',
+          tech: 'Cisco',
+          github: 'null',
+          demo: 'https://www.credly.com/badges/5851c92c-796d-48b5-9f37-249e668c993d/'
+        },
+        {
+          id: 3,
+          name: 'Network Support & Security',
+          imageUrl: 'networksup',
+          status: '',
+          tech: 'Cisco',
+          github: 'null',
+          demo: 'https://www.credly.com/badges/f48c5e9d-58e3-4167-a1e5-1f80a8c64e7d/'
+        },
+        {
+          id: 4,
+          name: 'Rest API With Golang',
+          imageUrl: 'restapi',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://www.udemy.com/certificate/UC-ef07e231-ce99-46e9-aa9d-a4b12f8b59b5/'
+        },
+        {
+          id: 5,
+          name: 'Begginer Level Golang',
+          imageUrl: 'golang',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://www.udemy.com/certificate/UC-296602d7-b166-4c2b-9485-526fbe086176/'
+        },
+        {
+          id: 6,
+          name: 'Mastering PostgreSQL',
+          imageUrl: 'postgre',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://udemy.com/certificate/UC-f358636d-7cd0-40cb-a4af-fddb8c413862/'
+        },
+        {
+          id: 7,
+          name: 'Basic JavaScript Programming',
+          imageUrl: 'js',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/L4PQ1737OXO1'
+        },
+        {
+          id: 8,
+          name: 'Basic Structured Query Language',
+          imageUrl: 'sql',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/JMZV380QJPN9'
+        },
+        {
+          id: 9,
+          name: 'Basic Google Cloud',
+          imageUrl: 'gcloud',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/4EXGQ8N0GZRL'
+        },
+        {
+          id: 10,
+          name: 'SOLID Programming Principles',
+          imageUrl: 'solid',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/KEXL1VN90XG2'
+        },
+        {
+          id: 11,
+          name: 'Cloud Practitioner Essentials',
+          imageUrl: 'cloudaws',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/53XEO9WMKZRN'
+        },
+        {
+          id: 12,
+          name: 'Learn Basic DevOps',
+          imageUrl: 'devops',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/EYX4VMYK6ZDL'
+        },
+        {
+          id: 13,
+          name: 'Make a Single Page With React',
+          imageUrl: 'react',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://www.udemy.com/certificate/UC-d130bbd2-3f4f-4c78-9955-6d3c917d1b41/'
+        },
+        {
+          id: 14,
+          name: 'React Native Functions and Usage',
+          imageUrl: 'native',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://www.udemy.com/certificate/UC-2428600d-fc98-432d-b0eb-79b8aa9fc01a/'
+        },
+        {
+          id: 15,
+          name: 'Introduction to Modern JavaScript',
+          imageUrl: 'jsmodern',
+          status: '',
+          tech: 'Udemy',
+          github: 'null',
+          demo: 'https://www.udemy.com/certificate/UC-e83e6d68-122c-4232-9dee-cb326b5f7cd0/'
+        },
+        {
+          id: 16,
+          name: 'Basic Artificial Intelligence',
+          imageUrl: 'ai',
+          status: '',
+          tech: 'Dicoding Academy',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/07Z60MLMYZQR'
+        },
+        {
+          id: 17,
+          name: 'Planning Career As a Software Developer',
+          imageUrl: 'software',
+          status: '',
+          tech: 'Dicoding Indonesia',
+          github: 'null',
+          demo: 'https://www.dicoding.com/certificates/EYX4VMYK6ZDL'
+        }
+      ]
+    };
+  },
+  methods: {
+    openCredential(item) {
+      if (item && item.demo && item.demo !== 'null') {
+        window.open(item.demo, '_blank', 'noopener');
+      }
+    }
+  }
+}
+</script>
+<template>
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+    <article data-page="about">
+      <header>
+        <div
+          class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
+          <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
+          <h4>Certificate Obtained</h4>
+          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
+            Explore Certificates and Credential Links</h4>
+        </div>
+      </header>
+      <section>
+        <div>
+          <div class="grid grid-cols-1 gap-4 pb-32 md:grid-cols-3 md:gap-3 xl:grid-cols-3 xl:gap-3 2xl:gap-5 fade-zoom-in">
+            <div v-for="item in items" :key="item.id">
+              <div
+                class="item-card group relative flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 ">
+                <div class="relative w-full overflow-hidden rounded-xl cursor-pointer" @click="openCredential(item)" title="Open credential">
+                  <img alt="Certificate" loading="lazy" decoding="async" data-nimg="1"
+                    class="drop-shadow-xl rounded-xl w-full h-auto transition-transform duration-300 ease-out group-hover:scale-105"
+                    :src="'/img2/certificate-' + item.imageUrl + '.jpg'">
+                  <!-- Hover Preview Overlay -->
+                  <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="flex items-center gap-2 bg-black/55 px-3 py-2 rounded-lg border border-amber-200/40 text-amber-200 text-xs md:text-sm shadow-lg backdrop-blur-sm transform scale-95 group-hover:scale-100 transition-transform duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M1.5 9a7.5 7.5 0 1113.59 4.5l4.205 4.205a1.5 1.5 0 01-2.12 2.12L12.97 15.62A7.5 7.5 0 011.5 9zm7.5 3.75A3.75 3.75 0 109.001 5.25 3.75 3.75 0 009 12.75z" clip-rule="evenodd" />
+                      </svg>
+                      <span>Preview</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
+                  <div class="title-text font-medium text-secondary">{{ item.name }}
+                  </div>
+                  <div class="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
+                    {{ item.status }}</div>
+                  <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">
+                    {{ item.tech }}
+                  </div>
+                  <div class="w-full flex justify-end">
+                    <div class="flex cursor-pointer items-end gap-2 text-primary">
+                      <a v-if="item.github !== 'null'"
+                        :href="item.github" target="_blank" rel="noreferrer"
+                        title="View github repository" class="transition-all hover:text-accent">
+                        <svg stroke="currentColor"
+                          fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                          height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                          </path>
+                        </svg></a>
+                        <a v-if="item.demo !== 'null'" :href="item.demo" target="_blank" rel="noreferrer"
+                        title="View finished project" class="transition-all hover:text-accent">
+                        <svg stroke="currentColor"
+                          fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                          height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</div></template>
+
+<style>
+.item-card:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-8px);
+}
+/* Smooth fade + scale for group hover overlay (uses classes above) */
+/* No extra CSS needed since Tailwind utility classes handle the animation */
+svg:hover{
+  stroke: #ffdb70;
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Menggunakan animasi pada elemen yang diinginkan */
+.fade-zoom-in {
+  animation: fadeZoomIn 1s ease-in-out;
+}
+</style>
