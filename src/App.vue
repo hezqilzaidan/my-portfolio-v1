@@ -42,6 +42,10 @@
               <router-link to="/career"
                 class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 career">Career</router-link>
             </li>
+            <li>
+              <router-link to="/events"
+                class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 events">Events</router-link>
+            </li>
             <!-- <li> -->
               <!-- <router-link to="/blog" -->
                 <!-- class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 blog">Blog</router-link> -->
@@ -62,6 +66,7 @@
     <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
     <router-link to="/certificate" class="text-gray-300 hover:text-white">Certificate</router-link>
     <router-link to="/career" class="text-gray-300 hover:text-white">Career</router-link>
+    <router-link to="/events" class="text-gray-300 hover:text-white">Events</router-link>
     <!-- <router-link to="/blog" class="text-gray-300 hover:text-white">Blog</router-link> -->
   </nav>
 </footer>

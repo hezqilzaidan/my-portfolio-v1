@@ -32,6 +32,12 @@ const routes = [
     component: () => import('../views/CareerView.vue'),
     meta: { title: 'Career' }
   },
+  {
+    path: '/events',
+    name: 'events',
+    component: () => import('../views/EventView.vue'),
+    meta: { title: 'Events' }
+  },
   // {
   //   path: '/blog',
   //   name: 'blog',

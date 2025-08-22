@@ -58,6 +58,51 @@ export default {
           github: 'null',
           demo: '#'
         },
+        {
+          id: 7,
+          name: 'Dapensri Website Application',
+          imageUrl: 'dapensri',
+          status: 'A comprehensive website application for Dapensri organization with modern UI/UX design and robust backend functionality.',
+          tech: 'PHP, Laravel, CSS, Bootstrap',
+          github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 8,
+          name: 'LeixCode AI Chatbot',
+          imageUrl: 'chatbot',
+          status: 'An intelligent AI-powered chatbot application built with modern web technologies for enhanced user interaction and support.',
+          tech: 'TypeScript, React.js, Tailwind CSS',
+          github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 9,
+          name: 'Task Management App',
+          imageUrl: 'task',
+          status: 'A comprehensive task management application designed to help users organize, track, and complete their daily tasks efficiently.',
+          tech: 'Ruby, JavaScript, HTML, CSS',
+          github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 10,
+          name: 'Clone UI Shopee',
+          imageUrl: 'shopee',
+          status: 'A responsive e-commerce UI clone inspired by Shopee platform with modern design and interactive features.',
+          tech: 'HTML, JavaScript, CSS',
+          github: 'null',
+          demo: 'null'
+        },
+        {
+          id: 11,
+          name: 'Social Link App',
+          imageUrl: 'social',
+          status: 'A social media link aggregation platform that allows users to share multiple social media profiles in one centralized location.',
+          tech: 'HTML, CSS, JavaScript',
+          github: 'null',
+          demo: 'null'
+        },
       ]
     };
   }
