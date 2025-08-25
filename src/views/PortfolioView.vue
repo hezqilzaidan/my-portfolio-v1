@@ -10,7 +10,7 @@ export default {
           imageUrl: 'hijaiyah1',
           status: 'Hijaiyah Learning Game Application is a learning medium where this application contains materials about the basics of Hijaiyah letters.',
           tech: 'C#, C',
-          github: 'null',
+          github: 'https://github.com/hezqilzaidan/Learning-Arabic.git',
           demo: 'null'
         },
         {
@@ -35,9 +35,9 @@ export default {
           id: 4,
           name: 'Sistem Informasi TKIT Permata Hati',
           imageUrl: 'ph4',
-          status: 'An administrative information system website which functions as an application to manage details of student financing and data collection at TKIT Permata Hati.',
+          status: 'An administrative information system website which functions as an application to manage details of student financing & data collection at TKIT Permata Hati.',
           tech: 'Laravel 8, JavaScript',
-          github: 'null',
+          github: 'https://github.com/hezqilzaidan/siakad-ph.git',
           demo: 'https://siakad-permatahati.vercel.app/'
         },
         {
@@ -46,7 +46,7 @@ export default {
           imageUrl: 'lc',
           status: 'A car rental booking website with affordable prices and provides a variety of cars located in JABODETABEK',
           tech: 'JavaScript',
-          github: 'null',
+          github: 'https://github.com/hezqilzaidan/leix-rental-car.git',
           demo: 'https://leix-car.vercel.app/'
         },
         {
@@ -73,8 +73,8 @@ export default {
           imageUrl: 'chatbot',
           status: 'An intelligent AI-powered chatbot application built with modern web technologies for enhanced user interaction and support.',
           tech: 'TypeScript, React.js, Tailwind CSS',
-          github: 'null',
-          demo: 'null'
+          github: 'https://github.com/hezqilzaidan/leixcode-assist-dark.git',
+          demo: 'https://leixcode-chatbot-ai.vercel.app/'
         },
         {
           id: 9,
@@ -82,7 +82,7 @@ export default {
           imageUrl: 'task',
           status: 'A comprehensive task management application designed to help users organize, track, and complete their daily tasks efficiently.',
           tech: 'Ruby, JavaScript, HTML, CSS',
-          github: 'null',
+          github: 'https://github.com/hezqilzaidan/task-management-app.git',
           demo: 'null'
         },
         {
@@ -91,8 +91,8 @@ export default {
           imageUrl: 'shopee',
           status: 'A responsive e-commerce UI clone inspired by Shopee platform with modern design and interactive features.',
           tech: 'HTML, JavaScript, CSS',
-          github: 'null',
-          demo: 'null'
+          github: 'https://github.com/hezqilzaidan/Clone-Shopee-V1.git',
+          demo: 'https://clone-shopee-v1.vercel.app/'
         },
         {
           id: 11,
@@ -100,8 +100,17 @@ export default {
           imageUrl: 'social',
           status: 'A social media link aggregation platform that allows users to share multiple social media profiles in one centralized location.',
           tech: 'HTML, CSS, JavaScript',
-          github: 'null',
-          demo: 'null'
+          github: 'https://github.com/hezqilzaidan/Social-App.git',
+          demo: 'https://social-app-link.vercel.app/'
+        },
+        {
+          id: 11,
+          name: 'Qris Statis to Dynamic Converter',
+          imageUrl: 'qris',
+          status: 'A web application that converts static QRIS into dynamic codes with pre-filled amounts to eliminate manual entry & speed up payments.',
+          tech: 'HTML, CSS, JavaScript',
+          github: 'https://github.com/hezqilzaidan/qris-statis-to-dyanmic-converter.git',
+          demo: 'https://qris-statis-to-dyanmic-converter.vercel.app/'
         },
       ]
     };
